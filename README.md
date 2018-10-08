@@ -52,7 +52,7 @@ Here is example config file:
         - /all.log:
 
         # or override individual fields
-        - /hosts/all.log:a
+        - /hosts/all.log:
             format: "{{ __at_timestamp }} {{ host|default('unknown') }} {{ message }}"
 
         # and query part is recursive Jinja2 template where named captures are available
